@@ -52,6 +52,20 @@ h1{font-size:clamp(30px,5vw,46px);text-transform:uppercase}h3{font-size:20px;let
 .ad.aprobado{border-color:var(--ok);box-shadow:0 0 0 1px var(--ok)}.ad.aprobado .estado{background:var(--ok-s);color:var(--ok)}
 @media (max-width:720px){.cuerpo{grid-template-columns:1fr}.media img{max-width:440px}}
 footer{margin-top:40px;color:var(--muted);font-size:14px;border-top:1px solid var(--line);padding-top:14px}
+.lp{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.lp figure{margin:0;min-width:0}.lp figure.pc{grid-column:1/-1}
+.lp img{display:block;width:100%;height:auto;border-radius:10px;border:1px solid var(--line)}.lp figure.pc img{max-width:760px}
+.lp figcaption{font-size:13.5px;color:var(--muted);margin-top:6px}
+@media (max-width:640px){.lp{grid-template-columns:1fr 1fr}}
+.estructura{margin-top:22px;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+.estructura h2{font-size:24px;margin-bottom:12px}
+.arbol{display:grid;gap:8px}
+.nivel{display:grid;grid-template-columns:96px 1fr;column-gap:12px;row-gap:2px;align-items:baseline;border:1px solid var(--line);border-radius:10px;padding:10px 12px;min-width:0}
+.nivel .et{grid-row:span 2;font:600 12px "Barlow",sans-serif;letter-spacing:1.4px;text-transform:uppercase;color:var(--acento)}
+.nivel b{overflow-wrap:anywhere}.nivel span:not(.et){color:var(--ink2);font-size:14.5px}
+.nivel.conj{margin-left:18px}.anuncios{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-left:36px}
+.anuncios .nivel{grid-template-columns:1fr}.anuncios .nivel .et{grid-row:auto}
+.nivel.dest{margin-left:36px;border-style:dashed}
+@media (max-width:720px){.anuncios{grid-template-columns:1fr;margin-left:18px}.nivel.dest{margin-left:18px}.nivel.conj{margin-left:9px}.nivel{grid-template-columns:1fr}.nivel .et{grid-row:auto}}
 img.zoom{cursor:zoom-in}
 #lb{position:fixed;inset:0;z-index:1000;background:rgba(10,10,12,.92);display:flex;align-items:center;justify-content:center;overflow:auto;padding:max(16px,env(safe-area-inset-top)) 16px 16px}
 #lb[hidden]{display:none}
@@ -62,26 +76,64 @@ img.zoom{cursor:zoom-in}
 #lb .ay{position:fixed;bottom:14px;left:50%;transform:translateX(-50%);color:#ddd;font:500 13px/1.3 system-ui;background:rgba(0,0,0,.5);padding:6px 12px;border-radius:20px;pointer-events:none}
 body.lb-abierto{overflow:hidden}</style></head><body><div class="wrap">
 <div class="franja"></div>
-<div class="eyebrow">Juventus Academy Las Vegas · Meta Ads · Little Zebras · 28-10</div>
+<div class="eyebrow">Juventus Academy Las Vegas · Meta Ads · Little Zebras · actualizado 29-10</div>
 <h1>Campaña de Little Zebras (3 a 5 años)</h1>
-<p class="lead">La campaña de Little Zebras se rehace con destino a la página nueva de inscripción en vez de WhatsApp. Aquí están la propuesta de presupuesto y público y los tres anuncios con sus textos nuevos. Todavía no hay nada montado en Meta: se monta en borrador cuando todo esté aprobado.</p>
+<p class="lead">Con lo decidido en la reunión del 29-10: la campaña lleva a la página nueva de Little Zebras y el botón abre la inscripción con pago en PlayMetrics. Aquí están la estructura de la campaña, la página final, el presupuesto y público, y los tres anuncios. Todavía no hay nada montado en Meta: se monta en borrador cuando todo esté aprobado.</p>
 <div class="como"><b>Qué cambió en los anuncios:</b>
   <ul>
-    <li>Ninguna pieza ni texto dice "No tryout needed": desde el 27-10 la inscripción va al formulario del tryout 2026-27.</li>
+    <li>Ninguna pieza ni texto dice "No tryout needed" ni habla de WhatsApp: la inscripción es en PlayMetrics.</li>
     <li>El botón de las piezas pasó de "Send us a message" a <b>"Sign up today"</b>, y el de Meta será <b>"Sign up"</b>.</li>
     <li>Textos nuevos sin WhatsApp, con los datos reales del programa: niños y niñas de 3 a 5 años, jueves de 6 a 7 pm, entrenadores certificados y metodología Juventus. Little Zebras no menciona el programa competitivo.</li>
   </ul></div>
 <p class="como"><b>Cómo aprobar:</b> si está bien, botón <b>Aprobar</b>. Para corregir un texto, un título o una descripción, se escribe directamente encima; el botón pasa a <b>Aprobar con texto corregido</b> y se guarda la versión nueva. También se puede dejar una nota sin aprobar.</p>
 <div class="todo"><span class="cuenta"></span><button type="button">Aprobar todo lo que falta</button></div>
-<article class="ad pend conf" data-id="CONF">
+<section class="estructura" aria-label="Estructura de la campaña">
+  <h2>Estructura de la campaña, en resumen</h2>
+  <div class="arbol">
+    <div class="nivel camp"><span class="et">Campaña</span><b>JLV | LEADS | LITTLE ZEBRAS | OCT26</b><span>Objetivo: clientes potenciales · cuenta Juventus Academy Las Vegas · USD 6/día</span></div>
+    <div class="nivel conj"><span class="et">Conjunto</span><b>LZ | BROAD | 28-44 | LV-25MI</b><span>Padres de 28 a 44 años · Las Vegas + 25 millas (viven o estuvieron hace poco) · ubicaciones automáticas · optimiza al clic "Little Zebras" del botón de inscripción</span></div>
+    <div class="anuncios">
+      <div class="nivel"><span class="et">Anuncio 1</span><b>VIDEO-3 · Jesús</b><span>21 s, vertical · botón Sign up</span></div>
+      <div class="nivel"><span class="et">Anuncio 2</span><b>STATIC-HERO · 3 niños</b><span>"Ages 3 to 5 · Boys &amp; girls" · Sign up</span></div>
+      <div class="nivel"><span class="et">Anuncio 3</span><b>STATIC-2 · His first team</b><span>"The Juventus way" · Sign up</span></div>
+    </div>
+    <div class="nivel dest"><span class="et">Destino</span><b>jacademylasvegas.com/little-zebras/</b><span>&rarr; botón &rarr; PlayMetrics, programa LITTLE ZEBRAS (pago). Los datos del anuncio (utm) viajan hasta PlayMetrics.</span></div>
+  </div>
+  <p class="como">Se monta en borrador cuando estén aprobados la página, la campaña y los 3 anuncios; David la revisa y la publica. Primera evaluación a los 7–10 días.</p>
+</section><article class="ad pend conf" data-id="LANDING">
+  <header><span class="num">&#9679;</span><h3>Página nueva (versión final, 29-10)</h3><span class="estado" data-estado>Por aprobar</span></header>
+  <div class="segm">
+    <p style="margin:0 0 12px"><a class="dl" style="margin:0;font-size:17px" href="https://jacademylasvegas.com/little-zebras/" target="_blank" rel="noopener">Abrir jacademylasvegas.com/little-zebras/ &rarr;</a></p>
+    <div class="lp">
+      <figure><img class="zoom" src="assets/LP_cel.jpg?v=4" data-full="assets/LP_cel_1080.jpg?v=4" alt="Portada en el celular"><figcaption>Portada en el celular: solo niños de pie</figcaption></figure>
+      <figure><img class="zoom" src="assets/LP_clase.jpg?v=4" data-full="assets/LP_clase_1080.jpg?v=4" alt="Cómo es una clase"><figcaption>"Cómo es una clase": fotos sin niños sentados</figcaption></figure>
+      <figure><img class="zoom" src="assets/LP_pasos.jpg?v=4" data-full="assets/LP_pasos_1080.jpg?v=4" alt="Inscripción en 3 pasos"><figcaption>Inscripción en 3 pasos; el último es elegir cómo pagar</figcaption></figure>
+      <figure class="pc"><img class="zoom" src="assets/LP_pc.jpg?v=4" data-full="assets/LP_pc_1080.jpg?v=4" alt="Portada en el computador"><figcaption>Portada en el computador</figcaption></figure>
+    </div>
+    <p class="como" style="margin-top:14px"><b>Qué cambió desde la versión aprobada:</b></p>
+    <ul class="como" style="margin-top:4px">
+      <li>El botón <b>"Register for Little Zebras"</b> lleva directo a la inscripción del programa LITTLE ZEBRAS en PlayMetrics (con pago), como se decidió el 29-10.</li>
+      <li>Se quitaron las tomas con niños sentados (la niña sentada en el balón y la escena del coach).</li>
+      <li>El paso 3 dice <b>"Choose how to pay"</b> (pago completo o cuotas mensuales) y la pregunta del precio explica que se ve en PlayMetrics antes de pagar.</li>
+      <li>Carga en menos de 1 segundo en un celular con 4G y está en el menú de jacademylasvegas.com.</li>
+    </ul>
+    <p class="como"><b>Después del botón, en PlayMetrics:</b> crear la cuenta (correo y verificación), datos del papá y del niño, y elegir el pago: <b>USD 480</b> en un pago o <b>USD 60 hoy</b> y cuotas mensuales.</p>
+    <div class="acciones">
+      <button type="button" class="aprobar" data-accion="aprobar">Aprobar la página</button>
+      <button type="button" class="sec" data-accion="nota">Dejar una nota</button>
+    </div>
+    <div class="nota" hidden><textarea rows="2" placeholder="Nota sobre la página (opcional)"></textarea><button type="button" class="sec" data-accion="enviar-nota">Enviar nota</button></div>
+    <p class="aviso" data-aviso aria-live="polite"></p>
+  </div>
+</article><article class="ad pend conf" data-id="CONF">
   <header><span class="num">$</span><h3>Campaña propuesta: presupuesto y público</h3><span class="estado" data-estado>Por aprobar</span></header>
   <div class="segm">
     <dl>
-      <dt>Objetivo</dt><dd>Inscripciones a Little Zebras (3 a 5 años). El anuncio lleva a la página nueva <b>jacademylasvegas.com/little-zebras/</b> y Meta cuenta un registro cuando el padre toca el botón de inscripción, que abre el formulario de PlayMetrics (el mismo del tryout 2026-27, como se acordó el 27-10). Ya no va a WhatsApp.</dd>
-      <dt>Presupuesto</dt><dd><b>USD 6 al día</b> (unos USD 180 al mes), <b>por confirmar</b>. Con el competitivo (USD 10 al día), Las Vegas queda en unos USD 480 al mes, dentro de los USD 500.</dd>
+      <dt>Objetivo</dt><dd>Inscripciones pagadas a Little Zebras (3 a 5 años). El anuncio lleva a <b>jacademylasvegas.com/little-zebras/</b>; el botón abre la inscripción del programa <b>LITTLE ZEBRAS en PlayMetrics</b> (pago completo USD 480 o en cuotas: USD 60 hoy). Meta cuenta un registro cuando el padre toca ese botón (evento "Little Zebras"). Decidido en la reunión del 29-10.</dd>
+      <dt>Presupuesto</dt><dd><b>USD 6 al día</b> (unos USD 180 al mes), acordado el 29-10. Con el competitivo (USD 10 al día), Las Vegas queda en unos USD 480 al mes, dentro de los USD 500.</dd>
       <dt>Público</dt><dd>Padres de <b>28 a 44 años</b> que viven o estuvieron hace poco en Las Vegas y <b>25 millas a la redonda</b>. Un solo público, sin que Meta lo amplíe por su cuenta.</dd>
       <dt>Dónde sale</dt><dd>Ubicaciones automáticas de Meta: sobre todo Instagram y Facebook (feed, Stories y Reels).</dd>
-      <dt>Duración</dt><dd>Prueba de un mes; primera revisión a los 7 días de encendida.</dd>
+      <dt>Evaluación</dt><dd>A los <b>7–10 días</b>. Si no funciona, plan B: un programa nuevo en PlayMetrics solo para Little Zebras, con su propio formulario.</dd>
       <dt>Anuncios</dt><dd>Los tres de abajo, en inglés y con el botón "Sign up".</dd>
     </dl>
     <div class="acciones">
@@ -94,7 +146,7 @@ body.lb-abierto{overflow:hidden}</style></head><body><div class="wrap">
 </article><article class="ad pend" data-id="V3">
   <header><span class="num">1</span><h3>VIDEO-3 · Jesús &quot;Is three too young?&quot;</h3><span class="estado" data-estado>Por aprobar</span></header>
   <div class="cuerpo">
-    <div class="media"><p class="donde">Video · vertical 9:16</p><video src="assets/V3.mp4?v=3" poster="assets/V3_portada.jpg?v=3" controls playsinline preload="metadata" class="vid"></video>
+    <div class="media"><p class="donde">Video · vertical 9:16</p><video src="assets/V3.mp4?v=4" poster="assets/V3_portada.jpg?v=4" controls playsinline preload="metadata" class="vid"></video>
       <p class="nota-pieza">Jesús a cámara con tomas reales de los pequeños (21 s, vertical). Ajustado el 28-10: se quitó la toma en la que decía &quot;If you need more information, send us a message&quot; (el anuncio ahora lleva a la página de inscripción). Ahora termina en &quot;...to grow. We&#x27;re waiting for you. Forza Juventus!&quot;; el corte coincide con un cambio de toma que ya tenía el video.</p></div>
     <div class="copy">
       <div class="lbl">Texto principal · inglés <span class="hint">· se puede editar</span></div>
@@ -117,7 +169,7 @@ body.lb-abierto{overflow:hidden}</style></head><body><div class="wrap">
 </article><article class="ad pend" data-id="SH">
   <header><span class="num">2</span><h3>STATIC-HERO · &quot;Little Zebras · Ages 3 to 5 · Boys &amp; girls&quot;</h3><span class="estado" data-estado>Por aprobar</span></header>
   <div class="cuerpo">
-    <div class="media"><p class="donde">Pieza · 1080 × 1350</p><img class="zoom" src="assets/SH.jpg?v=3" data-full="assets/SH_1080.jpg?v=3" alt="STATIC-HERO · &quot;Little Zebras · Ages 3 to 5 · Boys &amp; girls&quot;" loading="lazy" title="Clic para ampliar"><a class="dl" href="assets/SH_1080.jpg?v=3" target="_blank" rel="noopener">Ver la pieza a tamaño real</a>
+    <div class="media"><p class="donde">Pieza · 1080 × 1350</p><img class="zoom" src="assets/SH.jpg?v=4" data-full="assets/SH_1080.jpg?v=4" alt="STATIC-HERO · &quot;Little Zebras · Ages 3 to 5 · Boys &amp; girls&quot;" loading="lazy" title="Clic para ampliar"><a class="dl" href="assets/SH_1080.jpg?v=4" target="_blank" rel="noopener">Ver la pieza a tamaño real</a>
       <p class="nota-pieza">Ajustada el 28-10: ya no dice &quot;No tryout needed&quot; y el botón pasó de &quot;Send us a message&quot; a &quot;Sign up today&quot;. Misma foto y camiseta 2026-27.</p></div>
     <div class="copy">
       <div class="lbl">Texto principal · inglés <span class="hint">· se puede editar</span></div>
@@ -140,7 +192,7 @@ body.lb-abierto{overflow:hidden}</style></head><body><div class="wrap">
 </article><article class="ad pend" data-id="S2">
   <header><span class="num">3</span><h3>STATIC-2 · &quot;His first team. The Juventus way&quot;</h3><span class="estado" data-estado>Por aprobar</span></header>
   <div class="cuerpo">
-    <div class="media"><p class="donde">Pieza · 1080 × 1350</p><img class="zoom" src="assets/S2.jpg?v=3" data-full="assets/S2_1080.jpg?v=3" alt="STATIC-2 · &quot;His first team. The Juventus way&quot;" loading="lazy" title="Clic para ampliar"><a class="dl" href="assets/S2_1080.jpg?v=3" target="_blank" rel="noopener">Ver la pieza a tamaño real</a>
+    <div class="media"><p class="donde">Pieza · 1080 × 1350</p><img class="zoom" src="assets/S2.jpg?v=4" data-full="assets/S2_1080.jpg?v=4" alt="STATIC-2 · &quot;His first team. The Juventus way&quot;" loading="lazy" title="Clic para ampliar"><a class="dl" href="assets/S2_1080.jpg?v=4" target="_blank" rel="noopener">Ver la pieza a tamaño real</a>
       <p class="nota-pieza">Ajustada el 28-10: &quot;No tryout needed&quot; pasó a &quot;The Juventus way&quot; y el botón a &quot;Sign up today&quot;. Misma foto.</p></div>
     <div class="copy">
       <div class="lbl">Texto principal · inglés <span class="hint">· se puede editar</span></div>
@@ -160,7 +212,7 @@ body.lb-abierto{overflow:hidden}</style></head><body><div class="wrap">
       <p class="aviso" data-aviso aria-live="polite"></p>
     </div>
   </div>
-</article><footer>Juventus Academy Las Vegas · Aprobación de la campaña de Little Zebras · 28-10-2026 · Página interna, no indexada.</footer>
+</article><footer>Juventus Academy Las Vegas · Aprobación de la campaña de Little Zebras · actualizado 29-10-2026 · Página interna, no indexada.</footer>
 </div>
 <script>
 const CFG={"accion": "https://docs.google.com/forms/d/e/1FAIpQLSeGUY8Cv9Ea08X9HkdznY9pzVoUc4Gj-GdymsVTFP86wbE5sw/formResponse", "entry": {"pieza": 333677581, "cuenta": 724853821, "autor": 299801437, "comentario": 1175231019, "copy_corregido": 1649408514, "copy_original": 1637675582, "enviado": 909195940, "tipo": 1605073129, "zona": 1831673234, "fila": 1327618412}, "cuenta": "jlv_little_zebras"};
@@ -188,7 +240,7 @@ async function nota(ad){const ta=ad.querySelector('.nota textarea'),t=ta.value.t
   const ok=await enviar({pieza:ad.dataset.id,cuenta:CFG.cuenta,autor:'Alessandro',tipo:'comentario',comentario:t,copy_original:'',copy_corregido:cambiado(ad)?JSON.stringify(leer(ad)):'',enviado:new Date().toISOString(),zona:'',fila:''});
   av.textContent=ok?'Nota enviada.':'No se pudo enviar la nota.';if(ok){ta.value='';ad.querySelector('.nota').hidden=true}}
 function contar(){const n=document.querySelectorAll('.ad').length,ap=document.querySelectorAll('.ad.aprobado').length;
-  document.querySelector('.todo .cuenta').textContent=ap+' de '+n+' aprobados (campaña + 3 anuncios)';document.querySelector('.todo button').hidden=ap===n}
+  document.querySelector('.todo .cuenta').textContent=ap+' de '+n+' aprobados (página, campaña y 3 anuncios)';document.querySelector('.todo button').hidden=ap===n}
 document.querySelectorAll('.ad').forEach(ad=>{ad.querySelectorAll('.ed').forEach(e=>e.addEventListener('input',()=>pintar(ad)));
   ad.addEventListener('click',ev=>{const a=ev.target.closest('[data-accion]');if(!a)return;const k=a.dataset.accion;
     if(k==='aprobar')aprobar(ad);
