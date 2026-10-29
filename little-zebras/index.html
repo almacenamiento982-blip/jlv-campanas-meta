@@ -52,7 +52,15 @@ h1{font-size:clamp(30px,5vw,46px);text-transform:uppercase}h3{font-size:20px;let
 .ad.aprobado{border-color:var(--ok);box-shadow:0 0 0 1px var(--ok)}.ad.aprobado .estado{background:var(--ok-s);color:var(--ok)}
 @media (max-width:720px){.cuerpo{grid-template-columns:1fr}.media img{max-width:440px}}
 footer{margin-top:40px;color:var(--muted);font-size:14px;border-top:1px solid var(--line);padding-top:14px}
-</style></head><body><div class="wrap">
+img.zoom{cursor:zoom-in}
+#lb{position:fixed;inset:0;z-index:1000;background:rgba(10,10,12,.92);display:flex;align-items:center;justify-content:center;overflow:auto;padding:max(16px,env(safe-area-inset-top)) 16px 16px}
+#lb[hidden]{display:none}
+#lb img{max-width:min(100%,1080px);max-height:calc(100vh - 32px);width:auto;height:auto;border-radius:6px;box-shadow:0 20px 60px rgba(0,0,0,.6);cursor:zoom-in}
+#lb.real{align-items:flex-start;justify-content:flex-start}
+#lb.real img{max-width:none;max-height:none;width:1080px;cursor:zoom-out;margin:auto}
+#lb .x{position:fixed;top:max(12px,env(safe-area-inset-top));right:14px;width:44px;height:44px;border-radius:50%;border:0;background:#fff;color:#111;font:600 24px/44px system-ui;cursor:pointer;z-index:2}
+#lb .ay{position:fixed;bottom:14px;left:50%;transform:translateX(-50%);color:#ddd;font:500 13px/1.3 system-ui;background:rgba(0,0,0,.5);padding:6px 12px;border-radius:20px;pointer-events:none}
+body.lb-abierto{overflow:hidden}</style></head><body><div class="wrap">
 <div class="franja"></div>
 <div class="eyebrow">Juventus Academy Las Vegas · Meta Ads · Little Zebras · 28-10</div>
 <h1>Campaña de Little Zebras (3 a 5 años)</h1>
@@ -86,7 +94,7 @@ footer{margin-top:40px;color:var(--muted);font-size:14px;border-top:1px solid va
 </article><article class="ad pend" data-id="V3">
   <header><span class="num">1</span><h3>VIDEO-3 · Jesús &quot;Is three too young?&quot;</h3><span class="estado" data-estado>Por aprobar</span></header>
   <div class="cuerpo">
-    <div class="media"><p class="donde">Video · vertical 9:16</p><video src="assets/V3.mp4?v=2" poster="assets/V3_portada.jpg?v=2" controls playsinline preload="metadata" class="vid"></video>
+    <div class="media"><p class="donde">Video · vertical 9:16</p><video src="assets/V3.mp4?v=3" poster="assets/V3_portada.jpg?v=3" controls playsinline preload="metadata" class="vid"></video>
       <p class="nota-pieza">Jesús a cámara con tomas reales de los pequeños (21 s, vertical). Ajustado el 28-10: se quitó la toma en la que decía &quot;If you need more information, send us a message&quot; (el anuncio ahora lleva a la página de inscripción). Ahora termina en &quot;...to grow. We&#x27;re waiting for you. Forza Juventus!&quot;; el corte coincide con un cambio de toma que ya tenía el video.</p></div>
     <div class="copy">
       <div class="lbl">Texto principal · inglés <span class="hint">· se puede editar</span></div>
@@ -109,7 +117,7 @@ footer{margin-top:40px;color:var(--muted);font-size:14px;border-top:1px solid va
 </article><article class="ad pend" data-id="SH">
   <header><span class="num">2</span><h3>STATIC-HERO · &quot;Little Zebras · Ages 3 to 5 · Boys &amp; girls&quot;</h3><span class="estado" data-estado>Por aprobar</span></header>
   <div class="cuerpo">
-    <div class="media"><p class="donde">Pieza · 1080 × 1350</p><img src="assets/SH.jpg?v=2" alt="STATIC-HERO · &quot;Little Zebras · Ages 3 to 5 · Boys &amp; girls&quot;" loading="lazy"><a class="dl" href="assets/SH_1080.jpg?v=2" target="_blank" rel="noopener">Ver la pieza a tamaño real</a>
+    <div class="media"><p class="donde">Pieza · 1080 × 1350</p><img class="zoom" src="assets/SH.jpg?v=3" data-full="assets/SH_1080.jpg?v=3" alt="STATIC-HERO · &quot;Little Zebras · Ages 3 to 5 · Boys &amp; girls&quot;" loading="lazy" title="Clic para ampliar"><a class="dl" href="assets/SH_1080.jpg?v=3" target="_blank" rel="noopener">Ver la pieza a tamaño real</a>
       <p class="nota-pieza">Ajustada el 28-10: ya no dice &quot;No tryout needed&quot; y el botón pasó de &quot;Send us a message&quot; a &quot;Sign up today&quot;. Misma foto y camiseta 2026-27.</p></div>
     <div class="copy">
       <div class="lbl">Texto principal · inglés <span class="hint">· se puede editar</span></div>
@@ -132,7 +140,7 @@ footer{margin-top:40px;color:var(--muted);font-size:14px;border-top:1px solid va
 </article><article class="ad pend" data-id="S2">
   <header><span class="num">3</span><h3>STATIC-2 · &quot;His first team. The Juventus way&quot;</h3><span class="estado" data-estado>Por aprobar</span></header>
   <div class="cuerpo">
-    <div class="media"><p class="donde">Pieza · 1080 × 1350</p><img src="assets/S2.jpg?v=2" alt="STATIC-2 · &quot;His first team. The Juventus way&quot;" loading="lazy"><a class="dl" href="assets/S2_1080.jpg?v=2" target="_blank" rel="noopener">Ver la pieza a tamaño real</a>
+    <div class="media"><p class="donde">Pieza · 1080 × 1350</p><img class="zoom" src="assets/S2.jpg?v=3" data-full="assets/S2_1080.jpg?v=3" alt="STATIC-2 · &quot;His first team. The Juventus way&quot;" loading="lazy" title="Clic para ampliar"><a class="dl" href="assets/S2_1080.jpg?v=3" target="_blank" rel="noopener">Ver la pieza a tamaño real</a>
       <p class="nota-pieza">Ajustada el 28-10: &quot;No tryout needed&quot; pasó a &quot;The Juventus way&quot; y el botón a &quot;Sign up today&quot;. Misma foto.</p></div>
     <div class="copy">
       <div class="lbl">Texto principal · inglés <span class="hint">· se puede editar</span></div>
@@ -193,4 +201,10 @@ function aplicar(st){for(const id in st){const ad=document.querySelector('.ad[da
   if(x.tipo&&x.tipo.indexOf('aprobado')===0)marcar(ad,x.tipo==='aprobado_copy'?'Aprobado con texto corregido':'Aprobado')}contar()}
 aplicar(LS.get());
 fetch('estado.json?t='+Date.now()).then(r=>r.ok?r.json():{}).then(j=>{if(j&&typeof j==='object')aplicar(j)}).catch(()=>{});
+(function(){var lb=document.createElement('div');lb.id='lb';lb.hidden=true;lb.innerHTML='<button class="x" type="button" aria-label="Cerrar">×</button><img alt=""><div class="ay">Clic en la imagen: tamaño real · Esc o × para cerrar</div>';document.body.appendChild(lb);
+var im=lb.querySelector('img');function cerrar(){lb.hidden=true;lb.classList.remove('real');document.body.classList.remove('lb-abierto');im.removeAttribute('src')}
+document.addEventListener('click',function(e){var t=e.target.closest('img.zoom');if(!t)return;e.preventDefault();im.src=t.dataset.full||t.src;im.alt=t.alt;lb.classList.remove('real');lb.hidden=false;document.body.classList.add('lb-abierto');lb.scrollTo(0,0)});
+im.addEventListener('click',function(e){e.stopPropagation();lb.classList.toggle('real');if(lb.classList.contains('real')){var r=im.getBoundingClientRect();lb.scrollTo((im.scrollWidth-innerWidth)/2,0)}});
+lb.addEventListener('click',function(e){if(e.target===lb||e.target.classList.contains('x'))cerrar()});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!lb.hidden)cerrar()})})();
 </script></body></html>
