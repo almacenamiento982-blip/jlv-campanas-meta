@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow"><title>Little Zebras · Aprobación</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap">
+<style>
+:root{--bg:#f3f2ef;--panel:#fff;--ink:#121212;--ink2:#45454a;--muted:#75757b;--line:#e1dfd9;--acento:#8c6a12;--marca:#c9a227;--ok:#1d7a4a;--ok-s:#e3f3ea;--warn:#946300;--warn-s:#fbf0d4;color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e0e0e;--panel:#191919;--ink:#f3f2ec;--ink2:#c8c7c0;--muted:#8e8d87;--line:#2d2d2d;--acento:#d9b54a;--ok:#5cc98c;--ok-s:#14301f;--warn:#e7b84a;--warn-s:#352a10;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0e0e0e;--panel:#191919;--ink:#f3f2ec;--ink2:#c8c7c0;--muted:#8e8d87;--line:#2d2d2d;--acento:#d9b54a;--ok:#5cc98c;--ok-s:#14301f;--warn:#e7b84a;--warn-s:#352a10;color-scheme:dark}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 "Barlow",system-ui,"Segoe UI",sans-serif}
+.wrap{max-width:1080px;margin:0 auto;padding-inline:18px;padding-block:26px 60px}
+h1,h2,h3{font-family:"Barlow Condensed","Barlow",system-ui,sans-serif;margin:0;line-height:1.1;text-wrap:balance}
+h1{font-size:clamp(30px,5vw,46px);text-transform:uppercase}h3{font-size:20px;letter-spacing:.4px}
+.franja{height:6px;background:var(--marca);border-radius:3px;width:64px;margin-bottom:14px}
+.eyebrow{font:600 13px/1 "Barlow",sans-serif;letter-spacing:2.5px;text-transform:uppercase;color:var(--acento);margin-bottom:10px}
+.lead{color:var(--ink2);font-size:18px;margin:10px 0 0;max-width:72ch}
+.como{margin-top:14px;font-size:15px;color:var(--ink2);max-width:80ch}
+.como ul{margin:6px 0 0;padding-left:20px}
+.segm{padding:14px 16px}
+.segm dl{display:grid;grid-template-columns:max-content 1fr;gap:8px 18px;margin:0}.segm dt{font-weight:600}.segm dd{margin:0;color:var(--ink2)}
+@media (max-width:560px){.segm dl{grid-template-columns:1fr;gap:2px}.segm dd{margin-bottom:8px}}
+.todo{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin:16px 0 0;padding:12px 14px;border:1px solid var(--line);border-radius:10px;background:var(--panel)}
+.todo .cuenta{font-weight:600}
+.ad{background:var(--panel);border:1px solid var(--line);border-radius:14px;margin-top:16px;overflow:hidden}
+.ad.conf{border-top:4px solid var(--marca)}
+.ad header{display:flex;align-items:center;gap:10px;padding:12px 16px;border-bottom:1px solid var(--line)}
+.num{font:700 16px "Barlow Condensed",sans-serif;background:var(--ink);color:var(--bg);width:26px;height:26px;border-radius:50%;display:grid;place-items:center;flex:none}
+.estado{margin-left:auto;font-size:13px;font-weight:600;padding:3px 10px;border-radius:999px;background:var(--warn-s);color:var(--warn);white-space:nowrap}
+.cuerpo{display:grid;grid-template-columns:minmax(0,380px) minmax(0,1fr);gap:22px;padding:16px}
+.media{min-width:0}.media img{display:block;width:100%;height:auto;border-radius:8px}
+.donde{font:600 12px "Barlow",sans-serif;letter-spacing:1.6px;text-transform:uppercase;color:var(--muted);margin:0 0 8px}
+.media img{max-width:380px}.media img.prev{max-width:340px;border-radius:14px;box-shadow:0 2px 14px rgba(0,0,0,.14);background:#fff}
+.ver{margin-top:10px}.ver summary{cursor:pointer;color:var(--acento);font-weight:600;font-size:14px}.ver .vid{margin-top:8px}
+.vid{display:block;width:100%;max-width:330px;aspect-ratio:9/16;height:auto;border-radius:8px;background:#000}
+.dl{display:inline-block;margin-top:8px;font-size:14px;color:var(--acento);font-weight:600}
+.nota-pieza{font-size:14px;color:var(--muted);margin:6px 0 0}
+.copy{min-width:0}.lbl{font:600 12px "Barlow",sans-serif;letter-spacing:1.6px;text-transform:uppercase;color:var(--muted);margin-top:14px}
+.lbl:first-child{margin-top:0}.hint{text-transform:none;letter-spacing:0;font-weight:400}
+.tp{font-size:15.5px}.tit{font-weight:600}
+.btn{display:inline-block;border:1px solid var(--line);border-radius:6px;padding:3px 12px;font-weight:600;font-size:14px;margin:4px 0 0}
+.trad{margin-top:14px;font-size:14.5px;color:var(--ink2)}.trad summary{cursor:pointer;color:var(--acento);font-weight:600}.trad p{margin:8px 0 0}
+.ed{border:1px dashed var(--line);border-radius:8px;padding:8px 10px;margin-top:4px;outline:none;white-space:pre-wrap}
+.ed:focus{border-color:var(--acento);border-style:solid}.ed.cambiado{border-color:var(--warn);border-style:solid}
+.acciones{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.acciones button,.nota button,.todo button{font:600 15px "Barlow",sans-serif;border-radius:8px;padding:9px 16px;cursor:pointer;border:1px solid var(--line);background:var(--panel);color:var(--ink)}
+.acciones button:focus-visible,.todo button:focus-visible,.nota button:focus-visible,.trad summary:focus-visible{outline:2px solid var(--acento);outline-offset:2px}
+.acciones .aprobar,.todo button{background:var(--ok);border-color:var(--ok);color:#fff}.acciones .aprobar.copy{background:var(--warn);border-color:var(--warn)}
+.nota[hidden],.deshacer[hidden],.todo button[hidden]{display:none}
+.nota{margin-top:10px;display:flex;flex-direction:column;gap:6px;align-items:flex-start}
+.nota textarea{font:15px "Barlow",sans-serif;padding:8px 10px;border-radius:8px;border:1px solid var(--line);background:var(--panel);color:var(--ink);width:100%}
+.aviso{margin:8px 0 0;font-size:14px;color:var(--ok);min-height:1em}
+.ad.aprobado{border-color:var(--ok);box-shadow:0 0 0 1px var(--ok)}.ad.aprobado .estado{background:var(--ok-s);color:var(--ok)}
+@media (max-width:720px){.cuerpo{grid-template-columns:1fr}.media img{max-width:440px}}
+footer{margin-top:40px;color:var(--muted);font-size:14px;border-top:1px solid var(--line);padding-top:14px}
+</style></head><body><div class="wrap">
+<div class="franja"></div>
+<div class="eyebrow">Juventus Academy Las Vegas · Meta Ads · Little Zebras · 28-10</div>
+<h1>Campaña de Little Zebras (3 a 5 años)</h1>
+<p class="lead">La campaña de Little Zebras se rehace con destino a la página nueva de inscripción en vez de WhatsApp. Aquí están la propuesta de presupuesto y público y los tres anuncios con sus textos nuevos. Todavía no hay nada montado en Meta: se monta en borrador cuando todo esté aprobado.</p>
+<div class="como"><b>Qué cambió en los anuncios:</b>
+  <ul>
+    <li>Ninguna pieza ni texto dice "No tryout needed": desde el 27-10 la inscripción va al formulario del tryout 2026-27.</li>
+    <li>El botón de las piezas pasó de "Send us a message" a <b>"Sign up today"</b>, y el de Meta será <b>"Sign up"</b>.</li>
+    <li>Textos nuevos sin WhatsApp, con los datos reales del programa: niños y niñas de 3 a 5 años, jueves de 6 a 7 pm, entrenadores certificados y metodología Juventus. Little Zebras no menciona el programa competitivo.</li>
+  </ul></div>
+<p class="como"><b>Cómo aprobar:</b> si está bien, botón <b>Aprobar</b>. Para corregir un texto, un título o una descripción, se escribe directamente encima; el botón pasa a <b>Aprobar con texto corregido</b> y se guarda la versión nueva. También se puede dejar una nota sin aprobar.</p>
+<div class="todo"><span class="cuenta"></span><button type="button">Aprobar todo lo que falta</button></div>
+<article class="ad pend conf" data-id="CONF">
+  <header><span class="num">$</span><h3>Campaña propuesta: presupuesto y público</h3><span class="estado" data-estado>Por aprobar</span></header>
+  <div class="segm">
+    <dl>
+      <dt>Objetivo</dt><dd>Inscripciones a Little Zebras (3 a 5 años). El anuncio lleva a la página nueva <b>jacademylasvegas.com/little-zebras/</b> y Meta cuenta un registro cuando el padre toca el botón de inscripción, que abre el formulario de PlayMetrics (el mismo del tryout 2026-27, como se acordó el 27-10). Ya no va a WhatsApp.</dd>
+      <dt>Presupuesto</dt><dd><b>USD 6 al día</b> (unos USD 180 al mes), <b>por confirmar</b>. Con el competitivo (USD 10 al día), Las Vegas queda en unos USD 480 al mes, dentro de los USD 500.</dd>
+      <dt>Público</dt><dd>Padres de <b>28 a 44 años</b> que viven o estuvieron hace poco en Las Vegas y <b>25 millas a la redonda</b>. Un solo público, sin que Meta lo amplíe por su cuenta.</dd>
+      <dt>Dónde sale</dt><dd>Ubicaciones automáticas de Meta: sobre todo Instagram y Facebook (feed, Stories y Reels).</dd>
+      <dt>Duración</dt><dd>Prueba de un mes; primera revisión a los 7 días de encendida.</dd>
+      <dt>Anuncios</dt><dd>Los tres de abajo, en inglés y con el botón "Sign up".</dd>
+    </dl>
+    <div class="acciones">
+      <button type="button" class="aprobar" data-accion="aprobar">Aprobar presupuesto y público</button>
+      <button type="button" class="sec" data-accion="nota">Dejar una nota</button>
+    </div>
+    <div class="nota" hidden><textarea rows="2" placeholder="Nota sobre el presupuesto o el público (opcional)"></textarea><button type="button" class="sec" data-accion="enviar-nota">Enviar nota</button></div>
+    <p class="aviso" data-aviso aria-live="polite"></p>
+  </div>
+</article><article class="ad pend" data-id="V3">
+  <header><span class="num">1</span><h3>VIDEO-3 · Jesús &quot;Is three too young?&quot;</h3><span class="estado" data-estado>Por aprobar</span></header>
+  <div class="cuerpo">
+    <div class="media"><p class="donde">Video · vertical 9:16</p><video src="assets/V3.mp4?v=2" poster="assets/V3_portada.jpg?v=2" controls playsinline preload="metadata" class="vid"></video>
+      <p class="nota-pieza">Jesús a cámara con tomas reales de los pequeños (21 s, vertical). Ajustado el 28-10: se quitó la toma en la que decía &quot;If you need more information, send us a message&quot; (el anuncio ahora lleva a la página de inscripción). Ahora termina en &quot;...to grow. We&#x27;re waiting for you. Forza Juventus!&quot;; el corte coincide con un cambio de toma que ya tenía el video.</p></div>
+    <div class="copy">
+      <div class="lbl">Texto principal · inglés <span class="hint">· se puede editar</span></div>
+      <div class="tp ed" contenteditable="true" spellcheck="true" data-campo="texto">Is three too young for a real soccer academy? Not at Juventus Academy Las Vegas. ⚽<br><br>Little Zebras is your child&#x27;s first team: boys and girls ages 3 to 5 learning soccer through play, every Thursday from 6 to 7 PM, with certified coaches and the Juventus methodology.<br><br>Sign up at the link to get started 👇</div>
+      <div class="lbl">Título <span class="hint">· se puede editar</span></div>
+      <div class="tit ed" contenteditable="true" spellcheck="true" data-campo="titulo">Little Zebras · Ages 3–5 · Thursdays</div>
+      <div class="lbl">Descripción <span class="hint">· se puede editar</span></div>
+      <div class="tit ed" contenteditable="true" spellcheck="true" data-campo="descripcion">Juventus Academy Las Vegas</div>
+      <div class="lbl">Botón</div><p class="btn">Sign up</p>
+      <details class="trad"><summary>Traducción al español (solo de referencia, no se publica)</summary><p>¿Tres años es muy pequeño para una academia de fútbol de verdad? No en Juventus Academy Las Vegas. ⚽<br><br>Little Zebras es el primer equipo de tu hijo: niños y niñas de 3 a 5 años aprendiendo fútbol jugando, todos los jueves de 6 a 7 pm, con entrenadores certificados y la metodología Juventus.<br><br>Inscríbete en el enlace para empezar 👇</p></details>
+      <div class="acciones">
+        <button type="button" class="aprobar" data-accion="aprobar">Aprobar</button>
+        <button type="button" class="sec" data-accion="nota">Dejar una nota</button>
+        <button type="button" class="sec deshacer" data-accion="restaurar" hidden>Volver al texto original</button>
+      </div>
+      <div class="nota" hidden><textarea rows="2" placeholder="Nota para este anuncio (opcional)"></textarea><button type="button" class="sec" data-accion="enviar-nota">Enviar nota</button></div>
+      <p class="aviso" data-aviso aria-live="polite"></p>
+    </div>
+  </div>
+</article><article class="ad pend" data-id="SH">
+  <header><span class="num">2</span><h3>STATIC-HERO · &quot;Little Zebras · Ages 3 to 5 · Boys &amp; girls&quot;</h3><span class="estado" data-estado>Por aprobar</span></header>
+  <div class="cuerpo">
+    <div class="media"><p class="donde">Pieza · 1080 × 1350</p><img src="assets/SH.jpg?v=2" alt="STATIC-HERO · &quot;Little Zebras · Ages 3 to 5 · Boys &amp; girls&quot;" loading="lazy"><a class="dl" href="assets/SH_1080.jpg?v=2" target="_blank" rel="noopener">Ver la pieza a tamaño real</a>
+      <p class="nota-pieza">Ajustada el 28-10: ya no dice &quot;No tryout needed&quot; y el botón pasó de &quot;Send us a message&quot; a &quot;Sign up today&quot;. Misma foto y camiseta 2026-27.</p></div>
+    <div class="copy">
+      <div class="lbl">Texto principal · inglés <span class="hint">· se puede editar</span></div>
+      <div class="tp ed" contenteditable="true" spellcheck="true" data-campo="texto">Their first team, the Juventus way. ⚪⚫<br><br>Little Zebras is for boys and girls ages 3 to 5 in Las Vegas: fun sessions every Thursday from 6 to 7 PM where they learn the basics of soccer, make friends and fall in love with the game, with certified coaches.<br><br>Sign up at the link 👇</div>
+      <div class="lbl">Título <span class="hint">· se puede editar</span></div>
+      <div class="tit ed" contenteditable="true" spellcheck="true" data-campo="titulo">Little Zebras · Boys &amp; girls ages 3–5</div>
+      <div class="lbl">Descripción <span class="hint">· se puede editar</span></div>
+      <div class="tit ed" contenteditable="true" spellcheck="true" data-campo="descripcion">Every Thursday · 6–7 PM</div>
+      <div class="lbl">Botón</div><p class="btn">Sign up</p>
+      <details class="trad"><summary>Traducción al español (solo de referencia, no se publica)</summary><p>Su primer equipo, al estilo Juventus. ⚪⚫<br><br>Little Zebras es para niños y niñas de 3 a 5 años en Las Vegas: sesiones divertidas todos los jueves de 6 a 7 pm donde aprenden lo básico del fútbol, hacen amigos y se enamoran del juego, con entrenadores certificados.<br><br>Inscríbete en el enlace 👇</p></details>
+      <div class="acciones">
+        <button type="button" class="aprobar" data-accion="aprobar">Aprobar</button>
+        <button type="button" class="sec" data-accion="nota">Dejar una nota</button>
+        <button type="button" class="sec deshacer" data-accion="restaurar" hidden>Volver al texto original</button>
+      </div>
+      <div class="nota" hidden><textarea rows="2" placeholder="Nota para este anuncio (opcional)"></textarea><button type="button" class="sec" data-accion="enviar-nota">Enviar nota</button></div>
+      <p class="aviso" data-aviso aria-live="polite"></p>
+    </div>
+  </div>
+</article><article class="ad pend" data-id="S2">
+  <header><span class="num">3</span><h3>STATIC-2 · &quot;His first team. The Juventus way&quot;</h3><span class="estado" data-estado>Por aprobar</span></header>
+  <div class="cuerpo">
+    <div class="media"><p class="donde">Pieza · 1080 × 1350</p><img src="assets/S2.jpg?v=2" alt="STATIC-2 · &quot;His first team. The Juventus way&quot;" loading="lazy"><a class="dl" href="assets/S2_1080.jpg?v=2" target="_blank" rel="noopener">Ver la pieza a tamaño real</a>
+      <p class="nota-pieza">Ajustada el 28-10: &quot;No tryout needed&quot; pasó a &quot;The Juventus way&quot; y el botón a &quot;Sign up today&quot;. Misma foto.</p></div>
+    <div class="copy">
+      <div class="lbl">Texto principal · inglés <span class="hint">· se puede editar</span></div>
+      <div class="tp ed" contenteditable="true" spellcheck="true" data-campo="texto">Every big player starts somewhere. 🦓<br><br>At Little Zebras, kids ages 3 to 5 take their first steps in soccer with Juventus Academy Las Vegas: playing, moving and learning with certified coaches who know how to teach the little ones, following the Juventus methodology.<br><br>Thursdays from 6 to 7 PM. Sign up at the link 👇</div>
+      <div class="lbl">Título <span class="hint">· se puede editar</span></div>
+      <div class="tit ed" contenteditable="true" spellcheck="true" data-campo="titulo">His first team · Ages 3–5</div>
+      <div class="lbl">Descripción <span class="hint">· se puede editar</span></div>
+      <div class="tit ed" contenteditable="true" spellcheck="true" data-campo="descripcion">Juventus Academy Las Vegas</div>
+      <div class="lbl">Botón</div><p class="btn">Sign up</p>
+      <details class="trad"><summary>Traducción al español (solo de referencia, no se publica)</summary><p>Todo gran jugador empieza en algún lado. 🦓<br><br>En Little Zebras, los niños de 3 a 5 años dan sus primeros pasos en el fútbol con Juventus Academy Las Vegas: jugando, moviéndose y aprendiendo con entrenadores certificados que saben enseñar a los más pequeños, con la metodología Juventus.<br><br>Jueves de 6 a 7 pm. Inscríbete en el enlace 👇</p></details>
+      <div class="acciones">
+        <button type="button" class="aprobar" data-accion="aprobar">Aprobar</button>
+        <button type="button" class="sec" data-accion="nota">Dejar una nota</button>
+        <button type="button" class="sec deshacer" data-accion="restaurar" hidden>Volver al texto original</button>
+      </div>
+      <div class="nota" hidden><textarea rows="2" placeholder="Nota para este anuncio (opcional)"></textarea><button type="button" class="sec" data-accion="enviar-nota">Enviar nota</button></div>
+      <p class="aviso" data-aviso aria-live="polite"></p>
+    </div>
+  </div>
+</article><footer>Juventus Academy Las Vegas · Aprobación de la campaña de Little Zebras · 28-10-2026 · Página interna, no indexada.</footer>
+</div>
+<script>
+const CFG={"accion": "https://docs.google.com/forms/d/e/1FAIpQLSeGUY8Cv9Ea08X9HkdznY9pzVoUc4Gj-GdymsVTFP86wbE5sw/formResponse", "entry": {"pieza": 333677581, "cuenta": 724853821, "autor": 299801437, "comentario": 1175231019, "copy_corregido": 1649408514, "copy_original": 1637675582, "enviado": 909195940, "tipo": 1605073129, "zona": 1831673234, "fila": 1327618412}, "cuenta": "jlv_little_zebras"};
+const ORIG={"CONF": {}, "V3": {"texto": "Is three too young for a real soccer academy? Not at Juventus Academy Las Vegas. ⚽\n\nLittle Zebras is your child's first team: boys and girls ages 3 to 5 learning soccer through play, every Thursday from 6 to 7 PM, with certified coaches and the Juventus methodology.\n\nSign up at the link to get started 👇", "titulo": "Little Zebras · Ages 3–5 · Thursdays", "descripcion": "Juventus Academy Las Vegas", "nombre": "VIDEO-3 · Jesús \"Is three too young?\""}, "SH": {"texto": "Their first team, the Juventus way. ⚪⚫\n\nLittle Zebras is for boys and girls ages 3 to 5 in Las Vegas: fun sessions every Thursday from 6 to 7 PM where they learn the basics of soccer, make friends and fall in love with the game, with certified coaches.\n\nSign up at the link 👇", "titulo": "Little Zebras · Boys & girls ages 3–5", "descripcion": "Every Thursday · 6–7 PM", "nombre": "STATIC-HERO · \"Little Zebras · Ages 3 to 5 · Boys & girls\""}, "S2": {"texto": "Every big player starts somewhere. 🦓\n\nAt Little Zebras, kids ages 3 to 5 take their first steps in soccer with Juventus Academy Las Vegas: playing, moving and learning with certified coaches who know how to teach the little ones, following the Juventus methodology.\n\nThursdays from 6 to 7 PM. Sign up at the link 👇", "titulo": "His first team · Ages 3–5", "descripcion": "Juventus Academy Las Vegas", "nombre": "STATIC-2 · \"His first team. The Juventus way\""}};
+
+const LSK='jlv_little_zebras';
+const LS={get(){try{return JSON.parse(localStorage.getItem(LSK)||'{}')}catch(e){return {}}},set(v){try{localStorage.setItem(LSK,JSON.stringify(v))}catch(e){}}};
+const norm=t=>(t||'').replace(/\u00a0/g,' ').split('\n').map(l=>l.trim()).join('\n').replace(/\n{3,}/g,'\n\n').trim();
+const campos=ad=>[...ad.querySelectorAll('[data-campo]')].map(e=>e.dataset.campo);
+function leer(ad){const v={};campos(ad).forEach(c=>v[c]=norm(ad.querySelector('[data-campo="'+c+'"]').innerText));return v}
+function cambiado(ad){const o=ORIG[ad.dataset.id],v=leer(ad);return campos(ad).some(c=>v[c]!==norm(o[c]))}
+function pintar(ad){const b=ad.querySelector('.aprobar');if(!campos(ad).length)return;const c=cambiado(ad);b.textContent=c?'Aprobar con texto corregido':'Aprobar';b.classList.toggle('copy',c);
+  ad.querySelector('.deshacer').hidden=!c;ad.querySelectorAll('.ed').forEach(e=>e.classList.toggle('cambiado',norm(e.innerText)!==norm(ORIG[ad.dataset.id][e.dataset.campo])))}
+async function enviar(reg){const f=new URLSearchParams();for(const k in CFG.entry)f.append('entry.'+CFG.entry[k],reg[k]??'');
+  try{await fetch(CFG.accion,{method:'POST',mode:'no-cors',body:f});return true}catch(e){return false}}
+function marcar(ad,txt){ad.classList.add('aprobado');ad.querySelector('[data-estado]').textContent=txt}
+async function aprobar(ad){const id=ad.dataset.id,c=cambiado(ad),v=leer(ad),o=ORIG[id];
+  const reg={pieza:id,cuenta:CFG.cuenta,autor:'Alessandro',tipo:c?'aprobado_copy':'aprobado',comentario:'',copy_original:JSON.stringify({texto:o.texto||'',titulo:o.titulo||'',descripcion:o.descripcion||''}),
+    copy_corregido:c?JSON.stringify(v):'',enviado:new Date().toISOString(),zona:'',fila:''};
+  const av=ad.querySelector('[data-aviso]');av.textContent='Guardando…';
+  if(!await enviar(reg)){av.textContent='No se pudo guardar. Revise la conexión e intente de nuevo.';return}
+  const st=LS.get();st[id]={tipo:reg.tipo,v:c?v:null,hora:reg.enviado};LS.set(st);
+  marcar(ad,c?'Aprobado con texto corregido':'Aprobado');av.textContent='Guardado.';contar()}
+async function nota(ad){const ta=ad.querySelector('.nota textarea'),t=ta.value.trim();if(!t)return;const av=ad.querySelector('[data-aviso]');av.textContent='Enviando…';
+  const ok=await enviar({pieza:ad.dataset.id,cuenta:CFG.cuenta,autor:'Alessandro',tipo:'comentario',comentario:t,copy_original:'',copy_corregido:cambiado(ad)?JSON.stringify(leer(ad)):'',enviado:new Date().toISOString(),zona:'',fila:''});
+  av.textContent=ok?'Nota enviada.':'No se pudo enviar la nota.';if(ok){ta.value='';ad.querySelector('.nota').hidden=true}}
+function contar(){const n=document.querySelectorAll('.ad').length,ap=document.querySelectorAll('.ad.aprobado').length;
+  document.querySelector('.todo .cuenta').textContent=ap+' de '+n+' aprobados (campaña + 3 anuncios)';document.querySelector('.todo button').hidden=ap===n}
+document.querySelectorAll('.ad').forEach(ad=>{ad.querySelectorAll('.ed').forEach(e=>e.addEventListener('input',()=>pintar(ad)));
+  ad.addEventListener('click',ev=>{const a=ev.target.closest('[data-accion]');if(!a)return;const k=a.dataset.accion;
+    if(k==='aprobar')aprobar(ad);
+    else if(k==='nota'){const n=ad.querySelector('.nota');n.hidden=!n.hidden;if(!n.hidden)n.querySelector('textarea').focus()}
+    else if(k==='enviar-nota')nota(ad);
+    else if(k==='restaurar'){const o=ORIG[ad.dataset.id];campos(ad).forEach(c=>ad.querySelector('[data-campo="'+c+'"]').innerText=o[c]);pintar(ad)}})});
+document.querySelector('.todo button').addEventListener('click',async()=>{for(const ad of document.querySelectorAll('.ad:not(.aprobado)'))await aprobar(ad)});
+function aplicar(st){for(const id in st){const ad=document.querySelector('.ad[data-id="'+id+'"]');if(!ad)continue;const x=st[id];
+  if(x.v){campos(ad).forEach(c=>{if(x.v[c]!=null)ad.querySelector('[data-campo="'+c+'"]').innerText=x.v[c]});pintar(ad)}
+  if(x.tipo&&x.tipo.indexOf('aprobado')===0)marcar(ad,x.tipo==='aprobado_copy'?'Aprobado con texto corregido':'Aprobado')}contar()}
+aplicar(LS.get());
+fetch('estado.json?t='+Date.now()).then(r=>r.ok?r.json():{}).then(j=>{if(j&&typeof j==='object')aplicar(j)}).catch(()=>{});
+</script></body></html>
